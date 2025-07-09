@@ -1,0 +1,9 @@
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}

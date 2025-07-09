@@ -1,0 +1,427 @@
+/* ==================== ROOT VARIABEL ==================== */
+:root {
+  --color-primary: #333;
+  --color-accent: #007b83;
+  --color-bg: #f7f5f2;
+  --color-light: #fff;
+  --color-muted: #f9f6f1;
+  --color-hover: #222;
+  --font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==================== RESET & DASAR ==================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--font-main);
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==================== LAYOUT UTAMA ==================== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==================== HEADER & NAV ==================== */
+header {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+/* ==================== HERO ==================== */
+.hero {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* ==================== KONTEN ==================== */
+.content {
+  background-color: var(--color-muted);
+  padding: 40px 20px;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* ==================== TOMBOL ==================== */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn--confirm {
+  width: 100%;
+}
+
+.btn:hover,
+.btn--confirm:hover {
+  background-color: var(--color-hover);
+}
+
+/* ==================== PRODUK ==================== */
+.category-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.product-card {
+  width: 250px;
+  background-color: var(--color-light);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* ==================== PRODUK UNGGULAN ==================== */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+}
+
+.features-card {
+  width: 450px;
+  background-color: var(--color-light);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.features-card:hover {
+  transform: scale(1.02);
+}
+
+.features-card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.features-card h3 {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #444;
+}
+
+/* ==================== FILTER ==================== */
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.filters label {
+  font-weight: bold;
+}
+
+.filters select {
+  padding: 5px 10px;
+}
+
+/* ==================== FORM ==================== */
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ==================== REVIEW ==================== */
+.review-form {
+  margin-top: 20px;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  float: right;
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+  color: gold;
+}
+
+.reviews {
+  margin-top: 20px;
+}
+
+.review-item {
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+}
+
+/* ==================== PEMBAYARAN ==================== */
+.payment-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: var(--color-light);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.payment-methods {
+  margin: 20px 0;
+}
+
+.payment-method {
+  margin-bottom: 15px;
+}
+
+.payment-method label {
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.bank-options label {
+  display: block;
+  margin: 5px 0;
+}
+
+.payment-detail {
+  background: #f0f0f0;
+  padding: 20px;
+  border-left: 5px solid var(--color-accent);
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* ==================== PROMOSI & TENTANG KAMI ==================== */
+.promotion {
+  background-color: #e2e2e2;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-us {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  max-width: 40%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.about-text {
+  max-width: 50%;
+  text-align: left;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* ==================== KERANJANG ==================== */
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* ==================== ALERT ==================== */
+.alert {
+  display: none;
+  padding: 15px;
+  background-color: #4caf50;
+  color: white;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ==================== DETAIL PRODUK ==================== */
+.product-detail img {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.product-detail h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.product-detail p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: var(--color-primary);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image,
+  .about-text {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
