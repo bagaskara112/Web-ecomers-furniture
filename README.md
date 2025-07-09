@@ -3,7 +3,7 @@
 Dokumen ini berisi panduan untuk menjalankan dua proyek berikut di komputer lokal:
 
 1. ✅ Website Joomla 5 ( project tips perawatan)
-2. ✅ Website E-Commerce Furniture (dibuat dengan HTML,CSS,JS,BOOTSTRAP,PHP dan MySQL)
+2. ✅ Website E-Commerce Furniture (dibuat dengan Html,Css,Js,Bootstrap,Php Native dan MySQL)
 
 ## 🔧 Persiapan Awal (Wajib)
 
