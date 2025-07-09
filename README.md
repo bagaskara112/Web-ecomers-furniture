@@ -57,6 +57,8 @@ Jika ada navigasi yang saling terhubung antar dua project, pastikan:
 
 ## 📝 Catatan Tambahan
 
+- Disarankan install manual joomla jika ingin menghostingnya
+
 - Default login Joomla:
   Username: admin
   Password: admin1234567
