@@ -1,11 +1,9 @@
-# 📦 Panduan Menjalankan Project Joomla 5 & Web Furniture E-Commerce
-
 Dokumen ini berisi panduan untuk menjalankan dua proyek berikut di komputer lokal:
 
-1. ✅ Website Joomla 5 ( project tips perawatan)
-2. ✅ Website E-Commerce Furniture (dibuat dengan Html,Css,Js,Bootstrap,Php Native dan MySQL)
+1. Website Joomla 5 ( project tips perawatan)
+2. Website E-Commerce Furniture (dibuat dengan Html,Css,Js,Bootstrap,Php Native dan MySQL)
 
-## 🔧 Persiapan Awal (Wajib)
+## Persiapan Awal (Wajib)
 
 ### 1. Install Software Berikut:
 
@@ -17,7 +15,7 @@ Dokumen ini berisi panduan untuk menjalankan dua proyek berikut di komputer loka
 
 Letakkan kedua project di folder `htdocs` (jika menggunakan XAMPP):
 
-## 🧩 Menjalankan Joomla 5 (`joomla_project`)
+## Menjalankan Joomla 5 (`joomla_project`)
 
 ### Langkah-langkah:
 
@@ -35,7 +33,7 @@ Letakkan kedua project di folder `htdocs` (jika menggunakan XAMPP):
    ```
 6. jalankan di browser = `http://localhost/joomla_project`
 
-## 🛒 Menjalankan Web Furniture E-Commerce (furniture_ecommerce)
+## Menjalankan Web Furniture E-Commerce (furniture_ecommerce)
 
 ## Langkah-langkah:
 
@@ -48,14 +46,14 @@ Letakkan kedua project di folder `htdocs` (jika menggunakan XAMPP):
    $conn = new mysqli("localhost", "root", "", "furniture_db");
    Jalankan di browser: http://localhost/furniture_ecommerce
 
-## 🔗 Navigasi Terintegrasi
+## Navigasi Terintegrasi
 
 Jika ada navigasi yang saling terhubung antar dua project, pastikan:
 
 - Menggunakan URL absolut: http://localhost/furniture_ecommerce/...
 - Atau menggunakan link <a href="/furniture_ecommerce/index.php">
 
-## 📝 Catatan Tambahan
+## Catatan Tambahan
 
 - Disarankan install manual joomla jika ingin menghostingnya
 
@@ -71,7 +69,7 @@ Jika ada navigasi yang saling terhubung antar dua project, pastikan:
     Username: user
     Password: user123
 
-## 📂 File yang Wajib Dibawa
+## File yang Wajib Dibawa
 
 ## Jenis Nama File/Folder
 
