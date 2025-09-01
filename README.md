@@ -57,24 +57,21 @@ Jika ada navigasi yang saling terhubung antar dua project, pastikan:
 
 - Disarankan install manual joomla jika ingin menghostingnya
 
-- Default login Joomla:
+- login Joomla:
   Username: admin
   Password: admin1234567
 
-- Default login admin e-commerce:
+- login admin e-commerce:
   - admin:
     Username: admin
     Password: admin123
   - user:
     Username: user
     Password: user123
-
-## File yang Wajib Dibawa
-
+    
 ## Jenis Nama File/Folder
 
 - Folder Joomla: joomla_project/
 - DB Joomla: joomla.sql
 - Folder Web: furniture_ecommerce/
 - DB Web: furniture.sql
-"# Web-ecomers-furniture" 
